@@ -60,7 +60,7 @@ window.onload = function() {
 							getData(4,tag,function(data){
 							for(var i in data){
 								//console.log(data[i])
-								html+="<div class='request-content'><img style='width:25%;height:145px;' src="+data[i].image+"><div class='request-content-detail' style='width:70%;'><div>"+data[i].author+"</div><div class='request-content-summary'>"+data[i].summary+"</div><div class=''>"+data[i].pubdate+"</div></div></div>"
+								html+="<div class='request-content'><img style='width:25%;height:145px;display:block;' src="+data[i].image+"><div class='request-content-detail' style='width:70%;'><div>"+data[i].author+"</div><div class='request-content-summary'>"+data[i].summary+"</div><div class=''>"+data[i].pubdate+"</div></div></div>"
 							}
 
 							$("#tabs-container").find(".swiper-wrapper").children().eq(tabsSwiper.activeIndex).find('img.loading').hide()
@@ -134,7 +134,7 @@ window.onload = function() {
 					for(var i in data){
 						//console.log(data[i])
 
-						html+="<div class='request-content'><img style='width:25%;height:145px;' src="+data[i].image+"><div class='request-content-detail' style='width:70%;'><div>"+data[i].author+"</div><div class='request-content-summary'>"+data[i].summary+"</div><div class=''>"+data[i].pubdate+"</div></div></div>"
+						html+="<div class='request-content'><img style='width:25%;height:145px;display:block;' src="+data[i].image+"><div class='request-content-detail' style='width:70%;'><div>"+data[i].author+"</div><div class='request-content-summary'>"+data[i].summary+"</div><div class=''>"+data[i].pubdate+"</div></div></div>"
 					}
 						$("#tabs-container").find(".swiper-wrapper").children().eq(swiper.clickedIndex).find('img.loading').hide()
 						$("#tabs-container").find(".swiper-wrapper").children().eq(swiper.clickedIndex).append(html)
