@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+.request-content {
+	display: flex;
+    flex-direction: row;
+    padding: 4px;
+    margin: 2px 0;
+    border-bottom: 1px solid #999;
+}
+.request-content-detail{
+	padding-left:4px;
+}
+.request-content-summary{
+	display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+    font-size: 16px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    margin: 20px 0;
+    color: #666;
+}

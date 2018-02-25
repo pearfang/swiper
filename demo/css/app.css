@@ -1,0 +1,64 @@
+/*清除样式*/
+ul,li{list-style: none; margin: 0; padding: 0;}
+i{font-style: normal;}
+input[type="text"] { -webkit-appearance: none; }
+
+/* 商品详情 */
+.detail_title_jg li{ line-height: 32px;}
+
+/*兑换成功*/
+.change_success_box{background-color: #ff8049; color: #fff;}
+.change_success_box .icon-chenggong1{ font-size: 34px;}
+.change_success_btn{ text-align: center;}
+.change_success_btn a{border: 1px solid #bfbfbf; color: #737373; border-radius: 4px; display: inline-block;}
+
+/*放大效果*/
+@-webkit-keyframes bounceIn{
+    0%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}
+    50%{opacity:1;-webkit-transform:scale(2);transform:scale(2)}
+    70%{-webkit-transform:scale(1.5);transform:scale(1.5)}
+    to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
+}
+@keyframes bounceIn{
+    0%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}
+    50%{opacity:1;-webkit-transform:scale(2);transform:scale(2)}
+    70%{-webkit-transform:scale(1.5);transform:scale(1.5)}
+    to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
+}
+.bounceIn{animation: bounceIn 0.8s linear;}
+
+.detail_footer_gwc em{ font-weight: 400;}
+
+/*订单详情_规格*/
+.gg_list span{ display: inline-block; width: auto; line-height: 30px; background-color: #f5f5f5;border-radius: 4px; font-size: 14px;padding: 0 10px;margin-right: 15px;margin-bottom: 10px;}
+.gg_list .gg_current{background-color: #ff6d2e; color: #fff;}
+
+
+/*购物车*/
+input[type="checkbox"]{-webkit-appearance:none;outline: none;border: none; margin: 0;}
+.shop-info input.check{position:absolute;top:50%;left:0px;margin-top:-10px;outline: none;border: none;}
+input.check{border:none;background:url(../i/icon_radio3.png) no-repeat center left;background-size:100%;width:20px;height:20px; border: none;}
+input.check:checked{background:url(../i/icon_radio4.png) no-repeat center left;background-size:100%;}
+input.goodsCheck:checked{background:url(../i/icon_radio4.png) no-repeat center left;background-size:100%;}
+input.check:checked{background:url(../i/icon_radio4.png) no-repeat center left;background-size:100%;}
+.checked{background:url(../i/icon_radio4.png) no-repeat left center;background-size:100%;position:absolute;top:50%;left:15px;margin-top:-18px;width:20px;height:35px;}
+.shop-info{height:90px;position:relative;}
+.shop-info .shop-info-img {position: absolute;top: 0px; left: 30px;width: 90px;height: 90px;}
+.shop-info .shop-info-img a{position: relative;display: block;width: 90px; height: 90px;}
+.shop-info .shop-info-img a span{display:none;position: absolute;left: 10px;top:10px; padding-top: 16px; width: 70px;height: 70px;border-radius: 50%;background-color: rgba(0,0,0,.6); color: #fff; font-size: 12px; text-align: center; vertical-align: middle;}
+.shop-info .shop-info-img2 a span{display: block;}
+.shop-info .shop-info-text {margin-left: 130px;}
+.shop-group-item li{ border-bottom: 1px solid #e0e0e0;}
+.shop-group-item li:last-child{ border-bottom: none;}
+.shop-arithmetic{position:absolute;right:0px;top:0;box-sizing:border-box;white-space:nowrap;border:1px solid #e0e0e0; overflow: hidden;}
+.shop-arithmetic a{display:inline-block;width:23px;height:24px;line-height:24px;text-align:center;background:#fff;font-size:16px;}
+.shop-arithmetic .minus{border-right:1px solid #e0e0e0; float: left;}
+.shop-arithmetic .failed{color:#d1d1d1;}
+.shop-arithmetic .plus{border-left:1px solid #e0e0e0; float: right;}
+.shop-arithmetic .num{padding:0 10px;border:none;float:left; line-height:22px;box-sizing:border-box;vertical-align:top;text-align:center;}
+.shopPrice{text-align:right; font-size: 16px;}
+.shopPrice span{color:#f00; font-size: 20px;}
+.shop-price{    height: 24px;line-height: 24px;position: relative;}
+.payment-bar {text-align: center;}
+.payment-bar .all-checkbox{border-right: 1px solid #e6e6e6;}
+.payment-bar .all-checkbox input{display: inline-block; margin-right: 5px;vertical-align:middle; border: none; outline: none; margin-top: -2px;}
